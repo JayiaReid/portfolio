@@ -1,25 +1,50 @@
 import { BrowserRouter } from "react-router-dom"
-import {About, Contact, Experience, Overview, Navbar, Works, StarsCanvas} from './components'
+import {About, Contact, Experience, Overview, Navbar, Works, StarsCanvas, Footer} from './components'
+import Intro from "./components/Intro"
+import { useState } from "react"
 
 function App() {
+
+  const [display, setDisplay] = useState(false)
+
+  const openLaptop = () => {
+    setDisplay(true);
+};
+
+const resetDisplay = ()=>{
+    setDisplay(false);
+}
 
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
+      <Navbar display={display} setDisplay={setDisplay} />
+
+        {display==false && 
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Overview/>
-        </div>
-        <About/>
+          <Overview open={openLaptop}/>
+          
+        </div>}
+          
         
-        {/* <Tech/> */}
-        <Works/>
-        {/* <Experience/> */}
-        {/* <Feedbacks/> */}
-        <div className="relative z-0">
-          <Contact/>
-        </div>
-        <StarsCanvas/>
+        {display && 
+          <div className="content "> 
+
+            <Intro/>
+          <About/>
+        
+          {/* <Tech/> */}
+          <Works/>
+          {/* <Experience/> */}
+          {/* <Feedbacks/> */}
+          <div className="relative z-0">
+            <Contact/>
+          </div>
+          <Footer close={resetDisplay}/>
+          <StarsCanvas/>
+          </div>
+        }
+        
       </div>
     </BrowserRouter>
   )

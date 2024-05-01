@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    closeIcon,
+    github,
   } from "../assets";
   
   export const navLinks = [
@@ -261,5 +263,30 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
+
+  const footerIcons = [
+    {
+      title: "close laptop",
+      icon: closeIcon
+    },
+    {
+      title: "LinkedIn",
+      icon: figma
+    },
+    {
+      title: "Instagram",
+      icon: meta
+    },
+    {
+      title: "X",
+      icon: tesla
+    },
+    {
+      title: "Github",
+      icon: github
+    },
+
+    // linkedIn, Instagram, X, Github
+  ]
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, footerIcons };

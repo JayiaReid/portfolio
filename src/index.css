@@ -119,6 +119,28 @@
   -webkit-text-fill-color: transparent;
 }
 
+.content{
+  animation: fade-in 1s ease-in-out;
+}
+
+.rotate{
+  transform: rotate(-10deg);
+  transition: 0.75s;
+}
+
+.rotate:hover{
+  transform: scale(1.1);
+}
+
+@keyframes fade-in{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .about-card{
   transition: 0.75s;
 }
@@ -126,4 +148,75 @@
 .about-card:hover{
   transform: scale(1.1);
   /* transition: 0.75; */
+}
+
+.transparent{
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
+  border: 2px solid rgba(255, 255, 255, 0.074);
+  padding:50px 50px;
+}
+
+/* scrolling bar */
+.scroller {
+  max-width: 900px;
+  position: relative;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 60s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 60s;
+}
+
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+#scroller_body {
+  display: grid;
+  /* place-content: center; */
+  font-family: system-ui;
+  font-size: 1.125rem;
+  color: white;
+  
+}
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
 }
