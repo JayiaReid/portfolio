@@ -2,14 +2,16 @@ import { motion } from "framer-motion"
 import { styles } from "../styles"
 import { logo } from "../assets"
 
-const Overview = (props) => {
+const Overview = ({open}) => {
 
   return (
-    <section className="relative w-full h-screen mx-auto " onKeyDown={()=>props.open(true)}>
+    <section 
+      className="relative w-full h-screen mx-auto " 
+    >
       {/* <div className="absolute top-[57%] left-[45%]">
       </div> */}
     </section>
   )
 }
 
-export default Overview
+export default Overview;

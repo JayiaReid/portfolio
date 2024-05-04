@@ -220,3 +220,7 @@
   padding-inline: 0;
   list-style: none;
 }
+
+*::-webkit-scrollbar{
+  display: none;
+}

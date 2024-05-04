@@ -9,6 +9,7 @@ function App() {
 
   const openLaptop = () => {
     setDisplay(true);
+    console.log("key pressed")
 };
 
 const resetDisplay = ()=>{
@@ -17,7 +18,7 @@ const resetDisplay = ()=>{
 
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="app relative w-full z-0 bg-primary border-black outline-none scrollbar-none" onKeyDown={openLaptop}tabIndex={0}>
       <Navbar display={display} setDisplay={setDisplay} />
 
         {display==false && 
