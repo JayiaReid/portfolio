@@ -1,4 +1,4 @@
-import logo from "./j_logo.png";
+import logo from "./logo(1).png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -7,6 +7,10 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import closeIcon from './app.png'
+import instagram from './instagram.png'
+import linkedIn from './linkedin.png'
+import x from './logos.png'
+import astro from './astronaut (1).png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -31,7 +35,14 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import pp from './pp.jpg'
+
 export {
+  pp,
+  astro,
+  x,
+  linkedIn,
+  instagram,
   closeIcon,
   logo,
   backend,

@@ -4,12 +4,8 @@ import { logo } from "../assets"
 
 const Overview = (props) => {
 
-  const openLaptop = () =>{
-    props.open();
-  }
-
   return (
-    <section className="relative w-full h-screen mx-auto ">
+    <section className="relative w-full h-screen mx-auto " onKeyDown={()=>props.open(true)}>
       {/* <div className="absolute top-[57%] left-[45%]">
       </div> */}
     </section>

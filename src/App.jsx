@@ -22,7 +22,7 @@ const resetDisplay = ()=>{
 
         {display==false && 
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Overview open={openLaptop}/>
+          <Overview open={setDisplay}/>
           
         </div>}
           

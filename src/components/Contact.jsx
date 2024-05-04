@@ -5,7 +5,8 @@ import { styles } from '../styles'
 // import {EarthCanvas} from './canvas/Earth'
 import { sectionWrapper } from '../wrapper'
 import { slideIn } from '../utils/motion'
-import { creator } from '../assets'
+import { astro } from '../assets'
+import TypewriterComponent from 'typewriter-effect'
 
 // jayia_portfolio
 // template_j1tlgzr
@@ -54,10 +55,16 @@ const Contact = () => {
     })
   }
 
+  const LoopVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.play(); // Restart the video
+    }
+  };
+
   return (
     <div className='w-full xl:mt-12 xl:flex-row flex-row flex gap-10 overflow-hidden items-center justify-between'>
       <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-transparent rounded-2xl'>
-        <p className={`${styles.sectionSubText}`}>Get In Touch</p>
+        <p className={`${styles.sectionSubText}`}><TypewriterComponent options={{strings:["Get In Touch"], loop: true, autoStart: true}}/></p>
         <h3 className={`${styles.sectionHeadText}`}>Contact Me</h3>
         <form ref={formRef} onSubmit={handleSubmit} className='transparent mt-10 flex flex-col gap-8'>
           <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Name</span>
@@ -90,7 +97,7 @@ const Contact = () => {
         
         </form>
       </motion.div>
-      <img src={creator} className='w-auto h-auto object-cover' />
+      <img src={astro} className='mt-[50px] w-[300px] h-auto object-cover'/>
     </div>
   )
 }

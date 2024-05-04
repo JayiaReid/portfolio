@@ -25,6 +25,9 @@ import {
     threejs,
     closeIcon,
     github,
+    linkedIn,
+    instagram,
+    x,
   } from "../assets";
   
   export const navLinks = [
@@ -271,15 +274,15 @@ import {
     },
     {
       title: "LinkedIn",
-      icon: figma
+      icon: linkedIn
     },
     {
       title: "Instagram",
-      icon: meta
+      icon: instagram
     },
     {
       title: "X",
-      icon: tesla
+      icon: x
     },
     {
       title: "Github",

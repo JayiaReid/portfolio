@@ -6,6 +6,7 @@ import { services } from '../constants'
 import {fadeIn, textVariant} from '../utils/motion'
 import { sectionWrapper } from '../wrapper'
 import Tech from './Tech'
+import TypewriterComponent from 'typewriter-effect'
 
 const ServiceCard = ({index, title, icon}) =>{
   return(
@@ -25,7 +26,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>Introduction</p>
+        <p className={`${styles.sectionSubText}`}><TypewriterComponent options={{strings:["Introduction"], loop: true, autoStart: true}}/></p>
         <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
       </motion.div>
 

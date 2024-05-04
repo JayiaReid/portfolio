@@ -5,6 +5,7 @@ import { fadeIn, textVariant } from "../utils/motion"
 import { motion } from "framer-motion"
 import { styles } from "../styles"
 import { Tilt } from "react-tilt"
+import TypewriterComponent from "typewriter-effect"
 
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) =>{
 
@@ -43,7 +44,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-      <p className={`${styles.sectionSubText}`}>What I Worked On So Far</p>
+      <p className={`${styles.sectionSubText}`}><TypewriterComponent options={{strings:["What I have Worked On So Far"], loop: true, autoStart: true}}/></p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2> 
       </motion.div>
       <div className='w-full flex'>
