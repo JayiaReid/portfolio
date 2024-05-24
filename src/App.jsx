@@ -38,10 +38,11 @@ const resetDisplay = ()=>{
           <Works/>
           {/* <Experience/> */}
           {/* <Feedbacks/> */}
+          <Intro/>
           <div className="relative z-0">
             <Contact/>
           </div>
-          <Intro/>
+          
           <Footer close={resetDisplay}/>
           <StarsCanvas/>
           </div>
