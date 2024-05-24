@@ -31,7 +31,7 @@ const resetDisplay = ()=>{
         {display && 
           <div className="content "> 
 
-            <Intro/>
+            
           <About/>
         
           {/* <Tech/> */}
@@ -41,6 +41,7 @@ const resetDisplay = ()=>{
           <div className="relative z-0">
             <Contact/>
           </div>
+          <Intro/>
           <Footer close={resetDisplay}/>
           <StarsCanvas/>
           </div>
