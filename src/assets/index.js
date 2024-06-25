@@ -11,6 +11,12 @@ import instagram from './instagram.png'
 import linkedIn from './linkedin.png'
 import x from './logos.png'
 import astro from './astronaut (1).png'
+import stuco1 from './stuco1.png'
+import stuco2 from './stuco2.png'
+import stuco3 from './stuco3.png'
+import tb1 from './tb1.png'
+import tb2 from './tb2.png'
+import tb3 from './tb3.png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -34,10 +40,28 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import man1 from './man1.png'
+import man2 from './man2.png'
+import man3 from './man3.png'
+import man4 from './man4.png'
+import man5 from './man5.png'
+import man6 from './man6.png'
 
 import pp from './pp.jpg'
 
 export {
+  man1, 
+  man2,
+  man3,
+  man4,
+  man5,
+  man6,
+  tb1,
+  tb2,
+  tb3,
+  stuco1,
+  stuco2,
+  stuco3,
   pp,
   astro,
   x,

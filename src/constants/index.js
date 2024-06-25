@@ -1,3 +1,4 @@
+import { CloudDrizzle, Code, CpuIcon, Database, NotebookText } from "lucide-react";
 import {
     mobile,
     backend,
@@ -28,16 +29,28 @@ import {
     linkedIn,
     instagram,
     x,
+    stuco1,
+    stuco3,
+    stuco2,
+    tb1,
+    tb2,
+    tb3,
+    man1,
+    man2,
+    man3,
+    man4,
+    man5,
+    man6,
   } from "../assets";
   
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      id: "overview",
+      title: "Overview",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -47,11 +60,11 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Computer Programmer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Full-Stack Developer",
       icon: mobile,
     },
     {
@@ -59,7 +72,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Software Developer",
       icon: creator,
     },
   ];
@@ -78,16 +91,20 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Java",
+      icon: javascript,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Next Js",
+      icon: NotebookText,
+    },
+    {
+      name: "Python",
+      icon: Code,
     },
     {
       name: "Tailwind CSS",
@@ -98,23 +115,23 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "mySQL",
+      icon: Database,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "C",
+      icon: CpuIcon,
     },
     {
-      name: "docker",
+      name: "Drizzle ORM",
+      icon: CloudDrizzle,
+    },
+    {
+      name: "Docker",
       icon: docker,
     },
   ];
@@ -203,28 +220,50 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      id:1,
+      name: "StuCo",
+      slides: [
+        stuco1, stuco2, stuco3
+      ],
+      overview: "A comprehensive study tool platform offering calculators, note-taking, and conversion services",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "StuCo is a personal project designed as a comprehensive study platform. It features a study space with tools such as calculators, note-taking services, and conversion utilities in the form of draggable components. Developed using React for the frontend and Express.js for the backend, it is connected to a MySQL database. This project marked my entry into full-stack development and allowed me to apply concepts from both frontend and database coursework.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "mySQL",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Full-Stack Development",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Study Tools",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Personal Project",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: stuco1,
+      source_code_link: "https://github.com/JayiaReid/StuCo-App",
     },
     {
-      name: "Job IT",
+      id:2,
+      name: "Targaryen: Team Black",
+      slides: [
+        tb1, tb2, tb3
+      ],
+      overview: "A website that allows House of the Dragon fans to listen and leave reviews on the soundtrack",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -241,55 +280,75 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: tb1,
+      source_code_link: "https://github.com/JayiaReid/Targaryens",
     },
     {
-      name: "Trip Guide",
+      id:3,
+      name: "Stuco Management",
+      overview: "stuco managemnt is an admin-based tool under the stuco brand that allows admin to manage students, schools, attendance, etc. based on their role",
+      slides: [
+        man1, man2, man3, man4, man5, man6
+      ],
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "StuCo Management is an extension of the StuCo project. It enables administrators to manage students, schools, and other admins, providing various services including attendance monitoring. Developed using Next.js and Tailwind CSS, this project allowed me to enhance my skills in these technologies and learn about database management with Drizzle ORM.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Drizzle ORM",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Administrative Tools",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "KindeAuth",
+          color: "green-text-gradient",
+        },
+        {
+          name: "ShadCN UI",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: man1,
+      source_code_link: "https://github.com/JayiaReid/stuco-admin",
     },
   ];
 
   const footerIcons = [
     {
       title: "close laptop",
-      icon: closeIcon
+      icon: closeIcon,
+      link: 'close'
     },
     {
       title: "LinkedIn",
-      icon: linkedIn
+      icon: linkedIn,
+      link: 'www.linkedin.com/in/jayia-smith-reid-31a270314'
     },
     {
       title: "Instagram",
-      icon: instagram
+      icon: instagram,
+      link: 'https://www.instagram.com/t.jcjr/'
     },
     {
       title: "X",
-      icon: x
+      icon: x,
+      link : 'https://x.com/n01607926'
     },
     {
       title: "Github",
-      icon: github
-    },
-
-    // linkedIn, Instagram, X, Github
+      icon: github,
+      link: 'https://github.com/JayiaReid'
+    }
   ]
   
   export { services, technologies, experiences, testimonials, projects, footerIcons };

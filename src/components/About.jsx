@@ -11,9 +11,9 @@ import TypewriterComponent from 'typewriter-effect'
 const ServiceCard = ({index, title, icon}) =>{
   return(
     <Tilt className="xs:w-[250px] w-full">
-      <motion.div variants={fadeIn("right", "spring", 0.5*index, 1)} className='w-full green-pink-gradient p-[1px] rounded-[10%] shadow-card'>
-        <div options={{max:45, scale: 1, speed: 450 }} className='bg-black rounded-[10%] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
-          <img src={icon} alt={title} className='w-16 h-16 object-contain'/>
+      <motion.div variants={fadeIn("right", "spring", 0.5*index, 1)} className='w-full green-pink-gradient p-[1px] rounded-xl shadow-card'>
+        <div options={{max:45, scale: 1, speed: 450 }} className='bg-black rounded-xl py-5 px-12 min-h-[100px] flex justify-evenly items-center flex-col'>
+          {/* <img src={icon} alt={title} className='w-16 h-16 object-contain'/> */}
           <h3 className='text-white text-[20px] text-center font-bold'>{title}</h3>
         </div>
       </motion.div>
@@ -26,13 +26,12 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}><TypewriterComponent options={{strings:["Introduction"], loop: true, autoStart: true}}/></p>
+        <p className={`${styles.sectionSubText} mt-9`}><TypewriterComponent options={{strings:["Introduction"], loop: true, autoStart: true}}/></p>
         <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum architecto eaque rerum dolore eius voluptatum laudantium quos? Commodi minus asperiores quo distinctio nostrum alias tempora laboriosam, quam sapiente, adipisci quae.
-      </motion.p>
+  Welcome to my portfolio! Here, you'll find a showcase of the various projects I have worked on, along with details about my skills and experiences. Feel free to explore and learn more about my journey in computer programming. If you'd like to get in touch, you'll also find my contact information. Enjoy your visit!       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index)=>(
@@ -45,4 +44,4 @@ const About = () => {
   )
 }
 
-export default sectionWrapper(About, "about")
+export default sectionWrapper(About, "overview")

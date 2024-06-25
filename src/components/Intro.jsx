@@ -11,8 +11,7 @@ const Intro = () => {
           {/* <TypewriterComponent options={{strings:["Welcome!"], autoStart: true, loop: true}} /> */}
           <h1 className={`${styles.heroHeadText}`}>Hi, I am <span className="text-[#88abe4]">Jayia</span></h1>
           <p className={`${styles.heroSubTex} mt-5 text-white-200`}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quasi aliquam ut quos? Quo corrupti accusamus alias fuga asperiores, quae nesciunt perferendis perspiciatis eum, maiores adipisci reiciendis distinctio sed beatae?
-          </p>
+          A dedicated computer programming student at Humber College, passionate about mastering programming languages like C, Java, and Python. My expertise extends to web development with HTML, CSS, JavaScript, and frameworks such as React, Next.js, and Tailwind CSS. Through diverse projects like Task Force, StuCo, and Java Airlines, I have honed my problem-solving, leadership, and collaborative skills. Driven by continuous learning and innovation, I am eager to bring my technical proficiency and enthusiasm to any team or organization.          </p>
         </div>
         <div className="flex flex-col justify-center items-center mt-5">
            <div className="w-[270px] h-[270px] rounded-full bg-[#fff] flex justify-center items-center">
