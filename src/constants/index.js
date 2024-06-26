@@ -67,13 +67,14 @@ import {
       title: "Full-Stack Developer",
       icon: mobile,
     },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
+    
     {
       title: "Software Developer",
       icon: creator,
+    },
+    {
+      title: "Student",
+      icon: backend,
     },
   ];
   
@@ -227,31 +228,27 @@ import {
       ],
       overview: "A comprehensive study tool platform offering calculators, note-taking, and conversion services",
       description:
-        "StuCo is a personal project designed as a comprehensive study platform. It features a study space with tools such as calculators, note-taking services, and conversion utilities in the form of draggable components. Developed using React for the frontend and Express.js for the backend, it is connected to a MySQL database. This project marked my entry into full-stack development and allowed me to apply concepts from both frontend and database coursework.",
+        "StuCo is a personal project designed as a comprehensive study platform. It features a study space with tools such as timers, to-do lists, calculators, note-taking services, and conversion utilities in the form of draggable components. Developed using React for the frontend and Express.js for the backend, it is connected to a MySQL database. This project marked my entry into full-stack development and allowed me to apply fundamental concepts from both frontend and database coursework.",
       tags: [
         {
           name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "mySQL",
-          color: "green-text-gradient",
-        },
-        {
           name: "CSS",
           color: "pink-text-gradient",
         },
         {
-          name: "Full-Stack Development",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Study Tools",
+          name: "mySQL",
           color: "green-text-gradient",
         },
         {
-          name: "Personal Project",
-          color: "pink-text-gradient",
+          name: "Full-Stack Development",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Study Tools",
+          color: "yellow-text-gradient",
         },
       ],
       image: stuco1,
@@ -265,10 +262,10 @@ import {
       ],
       overview: "A website that allows House of the Dragon fans to listen and leave reviews on the soundtrack",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This website is built using the react framework with an implemented backend using expressJs. The website incorporates CSS for the UI and implements react fundamentals to present an encaptivating UI. Users are able to listen to the songs of the soundtrack associated with Team Black as well as leave reviews and view user reviews saved within the database.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
@@ -276,7 +273,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "CSS",
           color: "pink-text-gradient",
         },
       ],
@@ -307,15 +304,15 @@ import {
         },
         {
           name: "Administrative Tools",
-          color: "blue-text-gradient",
+          color: "yellow-text-gradient",
         },
         {
           name: "KindeAuth",
-          color: "green-text-gradient",
+          color: "red-text-gradient",
         },
         {
           name: "ShadCN UI",
-          color: "pink-text-gradient",
+          color: "orange-text-gradient",
         },
       ],
       image: man1,

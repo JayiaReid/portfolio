@@ -35,7 +35,7 @@ const Slideshow = ({ slides }) => {
         </div>
       </div>
       <button
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 disabled:opacity-50"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black text-white rounded-full p-2 disabled:opacity-50"
         onClick={scrollPrev}
         disabled={!canScrollPrev}
       >
@@ -43,11 +43,11 @@ const Slideshow = ({ slides }) => {
         <span className="sr-only">Previous slide</span>
       </button>
       <button
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 disabled:opacity-50"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black text-white rounded-full p-2 disabled:opacity-50"
         onClick={scrollNext}
         disabled={!canScrollNext}
       >
-        <ArrowRight size={32} />
+        <ArrowRight size={32} className='' />
         <span className="sr-only">Next slide</span>
       </button>
     </div>
