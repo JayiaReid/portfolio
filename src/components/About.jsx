@@ -7,6 +7,7 @@ import {fadeIn, textVariant} from '../utils/motion'
 import { sectionWrapper } from '../wrapper'
 import Tech from './Tech'
 import TypewriterComponent from 'typewriter-effect'
+import ResumeDownload from './ResumeDownload'
 
 const ServiceCard = ({index, title, icon}) =>{
   return(
@@ -33,6 +34,7 @@ const About = () => {
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
   Welcome to my portfolio! Here, you'll find a showcase of the various projects I have worked on, along with details about my skills and experiences. Feel free to explore and learn more about my journey in computer programming. If you'd like to get in touch, you'll also find my contact information. Enjoy your visit!       </motion.p>
 
+      <ResumeDownload/>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index)=>(
           <ServiceCard key={service.title} index={index} {...service}/>

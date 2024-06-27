@@ -41,6 +41,15 @@ import {
     man4,
     man5,
     man6,
+    weath1,
+    weath3,
+    weath2,
+    ja1,
+    ja2,
+    ja3,
+    ja4,
+    ja6,
+    ja5,
   } from "../assets";
   
   export const navLinks = [
@@ -317,6 +326,58 @@ import {
       ],
       image: man1,
       source_code_link: "https://github.com/JayiaReid/stuco-admin",
+    },
+    {
+      id:4,
+      name: "Weather App",
+      slides: [
+        weath1, weath3, weath2
+      ],
+      overview: "The Weather app developed solely in react utilizing an API",
+      description:
+        "This app is built using the react framework with css styling. The app is implemented using a weather API and allows users to search for a city and see specific weather details. ",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "API",
+          color: "red-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: weath1,
+      source_code_link: "https://github.com/JayiaReid/weather",
+    },
+    {
+      id:5,
+      name: "Java Airlines",
+      slides: [
+        ja1, ja2, ja3,ja4, ja5, ja6
+      ],
+      overview: "A flight booking simulator where you're able to login, skim through available flights, book a flight, view current flight tickets, cancel ticket bookings if desired.",
+      description:
+        "This app is built using java object-oriented principle such as encapsulation, polymorphism, etc. The java.awt package was used for UI, bringing our application to life. Multiple class systems and modularization was used as well as control systems and other fundamental programming principles to present a well organized system. As for storing information, java file functions were implemented to store information into respective text files",
+      tags: [
+        {
+          name: "Java",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "OOP",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Files",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: ja2,
+      source_code_link: "https://github.com/JayiaReid/JavaAirlines",
     },
   ];
 

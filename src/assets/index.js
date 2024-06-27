@@ -46,10 +46,29 @@ import man3 from './man3.png'
 import man4 from './man4.png'
 import man5 from './man5.png'
 import man6 from './man6.png'
+import weath1 from './weath1.png'
+import weath2 from './weath2.png'
+import weath3 from './weath3.png'
+import ja1 from './ja1.png'
+import ja2 from './ja2.png'
+import ja3 from './ja3.png'
+import ja4 from './ja4.png'
+import ja5 from './ja5.png'
+import ja6 from './ja6.png'
+
 
 import pp from './pp.jpg'
 
 export {
+  ja1,
+  ja2,
+  ja3,
+  ja4,
+  ja5,
+  ja6,
+  weath1,
+weath2,
+weath3,
   man1, 
   man2,
   man3,
