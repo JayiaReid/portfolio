@@ -50,6 +50,12 @@ import {
     ja4,
     ja6,
     ja5,
+    f1,
+    f2,
+    f3,
+    f4,
+    f5,
+    f6,
   } from "../assets";
   
   export const navLinks = [
@@ -262,6 +268,44 @@ import {
       ],
       image: stuco1,
       source_code_link: "https://github.com/JayiaReid/StuCo-App",
+    },
+    {
+      id:6,
+      name: "FinCo: Expenses",
+      slides: [
+        f1, f2, f3, f4, f5, f6
+      ],
+      overview: "Finco is a comprehensive financial management application designed to help users create budgets and track their expenses efficiently for seamless tracking and planning.",
+      description:
+        "This project is one of my most recent ones. It allowed me to understant severless databases and have more practice in nextJs and UI design. Finco offers a range of key features designed to enhance financial management and planning. Users can easily create and manage budgets, categorize expenses, and monitor their spending habits with the budget creation and expense tracking tools. The app includes a user-friendly overview dashboard that provides a comprehensive view of all financial activities, helping users stay on top of their finances. Additionally, Finco allows users to create detailed plans for potential expenses, complete with the ability to make notes and set reminders. With tools and features that facilitate seamless financial planning, Finco makes it easier for users to achieve their financial goals.",
+      tags: [
+        {
+          name: "NextJs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind CSS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "postgresql",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Full-Stack Development",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Expense-Tracking",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "Clerk Auth",
+          color: "red-text-gradient",
+        },
+      ],
+      image: f1,
+      source_code_link: "https://github.com/JayiaReid/finco",
     },
     {
       id:2,

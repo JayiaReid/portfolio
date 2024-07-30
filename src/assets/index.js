@@ -55,11 +55,23 @@ import ja3 from './ja3.png'
 import ja4 from './ja4.png'
 import ja5 from './ja5.png'
 import ja6 from './ja6.png'
-
+import f1 from './finco(1).png'
+import f2 from './finco(2).png'
+import f3 from './finco(3).png'
+import f4 from './finco(4).png'
+import f5 from './finco(5).png'
+import f6 from './finco(6).png'
 
 import pp from './pp.jpg'
 
 export {
+  f1,
+  f2,
+  f3,
+  f4,
+  f5,
+  f6,
+
   ja1,
   ja2,
   ja3,
@@ -67,9 +79,9 @@ export {
   ja5,
   ja6,
   weath1,
-weath2,
-weath3,
-  man1, 
+  weath2,
+  weath3,
+  man1,
   man2,
   man3,
   man4,
