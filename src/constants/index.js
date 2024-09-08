@@ -238,6 +238,8 @@ import {
     {
       id:1,
       name: "StuCo",
+      link:null,
+      type:"FullStack",
       slides: [
         stuco1, stuco2, stuco3
       ],
@@ -272,12 +274,14 @@ import {
     {
       id:6,
       name: "FinCo: Expenses",
+      type:"FullStack",
+      link: "https://finco-three.vercel.app/",
       slides: [
         f1, f2, f3, f4, f5, f6
       ],
       overview: "Finco is a comprehensive financial management application designed to help users create budgets and track their expenses efficiently for seamless tracking and planning.",
       description:
-        "This project is one of my most recent ones. It allowed me to understant severless databases and have more practice in nextJs and UI design. Finco offers a range of key features designed to enhance financial management and planning. Users can easily create and manage budgets, categorize expenses, and monitor their spending habits with the budget creation and expense tracking tools. The app includes a user-friendly overview dashboard that provides a comprehensive view of all financial activities, helping users stay on top of their finances. Additionally, Finco allows users to create detailed plans for potential expenses, complete with the ability to make notes and set reminders. With tools and features that facilitate seamless financial planning, Finco makes it easier for users to achieve their financial goals.",
+        "Finco offers a range of key features designed to enhance financial management and planning. It was developed using the NextJs framework with neon postgresql database and drizzle ORM for database CRUD operations. The seamless UI was developed using mostly tailwindCSS and some ShadCN UI components.",
       tags: [
         {
           name: "NextJs",
@@ -310,6 +314,8 @@ import {
     {
       id:2,
       name: "Targaryen: Team Black",
+      link:null,
+      type:"FullStack",
       slides: [
         tb1, tb2, tb3
       ],
@@ -336,6 +342,8 @@ import {
     {
       id:3,
       name: "Stuco Management",
+      link: null,
+      type:"FullStack",
       overview: "stuco managemnt is an admin-based tool under the stuco brand that allows admin to manage students, schools, attendance, etc. based on their role",
       slides: [
         man1, man2, man3, man4, man5, man6
@@ -374,6 +382,8 @@ import {
     {
       id:4,
       name: "Weather App",
+      link: null,
+      type:"Frontend",
       slides: [
         weath1, weath3, weath2
       ],
@@ -400,6 +410,8 @@ import {
     {
       id:5,
       name: "Java Airlines",
+      link: null,
+      type:"Java",
       slides: [
         ja1, ja2, ja3,ja4, ja5, ja6
       ],

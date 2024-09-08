@@ -17,7 +17,7 @@ import { useState } from "react";
 //   'https://via.placeholder.com/600x400/7f7fff'
 // ];
 
-const ProjectCard = ({slides, overview, index, name, description, tags, image, source_code_link, id }) => {
+const ProjectCard = ({slides, overview, index, name, description, tags, image, source_code_link, link }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const isEven = index % 2 === 0;
@@ -95,12 +95,21 @@ const ProjectCard = ({slides, overview, index, name, description, tags, image, s
               </span>
             ))}
           </div>
-          <button
+          <div className="flex items-center gap-5">
+            <button
             onClick={() => window.open(source_code_link, "_blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img src={github} alt="github" />
           </button>
+          {link? <button
+            onClick={() => window.open(link, "_blank")}
+            className="flex text-black justify-center items-center cursor-pointer hover:text-secondary hover:underline"
+          >
+            visit website
+          </button>: null}
+          </div>
+          
           
         </div>
       </Modal>
@@ -110,6 +119,11 @@ const ProjectCard = ({slides, overview, index, name, description, tags, image, s
 };
 
 const Works = () => {
+
+  const [show, setShow] = useState('All')
+
+  const types = ["All", "FullStack", "Frontend", "Java"]
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -128,9 +142,16 @@ const Works = () => {
         
       </div>
 
+      <div className="flex gap-5 justify-around items-center">
+        {types.map((type,index)=>(
+          <button key={index} onClick={()=>setShow(type)} className={`${show==type? 'bg-white text-primary' : null} mt-5 p-1 w-[100px] hover:bg-white hover:text-primary outline outline-2 ring-secondary duration-200 rounded-es-md rounded-se-md`} >{type}</button>
+        ))}
+      </div>
+
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />
+          show === 'All'? (<ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />): (show==='FullStack' && project.type==="FullStack"? <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />:show==='Frontend' && project.type==="Frontend"? <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />:show==='Java' && project.type==="Java"? <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />:null )
+          
         ))}
       </div>
 
