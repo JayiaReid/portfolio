@@ -120,9 +120,7 @@ const ProjectCard = ({slides, overview, index, name, description, tags, image, s
 
 const Works = () => {
 
-  const [show, setShow] = useState('All')
-
-  const types = ["All", "FullStack", "Frontend", "Java"]
+  
 
   return (
     <>
@@ -142,16 +140,9 @@ const Works = () => {
         
       </div>
 
-      <div className="flex gap-5 justify-around items-center">
-        {types.map((type,index)=>(
-          <button key={index} onClick={()=>setShow(type)} className={`${show==type? 'bg-white text-primary' : null} mt-5 p-1 w-[100px] hover:bg-white hover:text-primary outline outline-2 ring-secondary duration-200 rounded-es-md rounded-se-md`} >{type}</button>
-        ))}
-      </div>
-
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          show === 'All'? (<ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />): (show==='FullStack' && project.type==="FullStack"? <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />:show==='Frontend' && project.type==="Frontend"? <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />:show==='Java' && project.type==="Java"? <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />:null )
-          
+          <ProjectCard key={`project-${index}`} index={index} {...project} id={project.id} />
         ))}
       </div>
 
