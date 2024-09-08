@@ -53,7 +53,7 @@ function App() {
           <div className="content">
             <About />
             <Works />
-            <Intro />
+            {/* <Intro /> */}
             <div className="relative z-0">
               <Contact />
             </div>
