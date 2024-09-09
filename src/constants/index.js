@@ -314,7 +314,7 @@ import {
     {
       id:2,
       name: "Targaryen: Team Black",
-      link:null,
+      link:"https://targaryens.vercel.app/reviews",
       type:"FullStack",
       slides: [
         tb1, tb2, tb3
