@@ -61,10 +61,26 @@ import f3 from './finco(3).png'
 import f4 from './finco(4).png'
 import f5 from './finco(5).png'
 import f6 from './finco(6).png'
+import r1 from './r1.png'
+import r2 from './r2.png'
+import r3 from './r3.png'
+import r4 from './r04.png'
+import r5 from './r5.png'
+import r6 from './r6.png'
+import r7 from './r7.png'
+import r8 from './r8.png'
 
 import pp from './pp.jpg'
 
 export {
+r1,
+r2,
+r3,
+r4,
+r5,
+r6,
+r7,
+  r8,
   f1,
   f2,
   f3,

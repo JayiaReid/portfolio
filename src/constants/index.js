@@ -56,6 +56,14 @@ import {
     f4,
     f5,
     f6,
+    r1,
+    r2,
+    r3,
+    r4,
+    r5,
+    r6,
+    r7,
+    r8,
   } from "../assets";
   
   export const navLinks = [
@@ -271,8 +279,37 @@ import {
       image: stuco1,
       source_code_link: "https://github.com/JayiaReid/StuCo-App",
     },
+    ,
     {
-      id:6,
+      id:2,
+      name: "Rhaen",
+      link:"https://rhaen.vercel.app/",
+      type:"FullStack",
+      slides: [
+        r1, r2, r3, r4, r5, r6, r7, r8
+      ],
+      overview: "A cake shop and recipe catalogue ecommerce web app",
+      description:
+        "Rhaen is an online store that offers a recipe catalogue for customers that wish to get their own hands dirty. This nextJs web app features a beautiful and seamless UI designed using tailwind CSS and shadCN UI library. The backend composes of APIs that use NodeJs' fs and path modules for CRUD operations to respective json files. The authentication is handled by clerk.",
+      tags: [
+        {
+          name: "NextJs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "NodeJs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Clerk",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: r1,
+      source_code_link: "https://github.com/JayiaReid/Rhaen",
+    },
+    {
+      id:3,
       name: "FinCo: Expenses",
       type:"FullStack",
       link: "https://finco-three.vercel.app/",
@@ -312,9 +349,9 @@ import {
       source_code_link: "https://github.com/JayiaReid/finco",
     },
     {
-      id:2,
+      id:4,
       name: "Targaryen: Team Black",
-      link:"https://targaryens.vercel.app/reviews",
+      link:"https://targaryens.vercel.app/",
       type:"FullStack",
       slides: [
         tb1, tb2, tb3
@@ -340,7 +377,7 @@ import {
       source_code_link: "https://github.com/JayiaReid/Targaryens",
     },
     {
-      id:3,
+      id:5,
       name: "Stuco Management",
       link: null,
       type:"FullStack",
@@ -380,7 +417,7 @@ import {
       source_code_link: "https://github.com/JayiaReid/stuco-admin",
     },
     {
-      id:4,
+      id:6,
       name: "Weather App",
       link: null,
       type:"Frontend",
@@ -408,7 +445,7 @@ import {
       source_code_link: "https://github.com/JayiaReid/weather",
     },
     {
-      id:5,
+      id:7,
       name: "Java Airlines",
       link: null,
       type:"Java",
