@@ -64,6 +64,12 @@ import {
     r6,
     r7,
     r8,
+    TF1,
+    TF2,
+    TF3,
+    TF4,
+    TF5,
+    TF6,
   } from "../assets";
   
   export const navLinks = [
@@ -279,7 +285,6 @@ import {
       image: stuco1,
       source_code_link: "https://github.com/JayiaReid/StuCo-App",
     },
-    ,
     {
       id:2,
       name: "Rhaen",
@@ -472,18 +477,47 @@ import {
       image: ja2,
       source_code_link: "https://github.com/JayiaReid/JavaAirlines",
     },
+    {
+      id:8,
+      name: "Task Force",
+      link: null,
+      type:"Frontend",
+      slides: [
+        TF1, TF2, TF3,TF4, TF5, TF6
+      ],
+      overview: "A website for security company, Task Force, that allows customers to view what they offer and order services/packages.",
+      description:
+        "This website was built as a collaborative final project using HTML, CSS and Javascript. It is fully frontend and contains no backend. I led the group to success of earning perfect marks for the website.",
+      tags: [
+        {
+          name: "HTML",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "yellow-text-gradient",
+        },
+      ],
+      image: TF1,
+      source_code_link: "https://github.com/n01607926/Home-Security-Task-Force",
+    },
+    
   ];
 
   const footerIcons = [
-    {
-      title: "close laptop",
-      icon: closeIcon,
-      link: 'close'
-    },
+    // {
+    //   title: "close laptop",
+    //   icon: closeIcon,
+    //   link: 'close'
+    // },
     {
       title: "LinkedIn",
       icon: linkedIn,
-      link: 'www.linkedin.com/in/jayia-smith-reid-31a270314'
+      link: 'https://www.linkedin.com/in/jayia-reid-31a270314'
     },
     {
       title: "Instagram",

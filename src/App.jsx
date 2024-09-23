@@ -57,7 +57,7 @@ function App() {
             <div className="relative z-0">
               <Contact />
             </div>
-            <Footer close={resetDisplay} />
+            <Footer close={()=>resetDisplay} />
             <StarsCanvas />
           </div>
         )}

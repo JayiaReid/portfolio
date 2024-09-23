@@ -69,10 +69,23 @@ import r5 from './r5.png'
 import r6 from './r6.png'
 import r7 from './r7.png'
 import r8 from './r8.png'
+import TF1 from './TF1.png'
+import TF2 from './TF2.png'
+import TF3 from './TF3.png'
+import TF4 from './TF4.png'
+import TF5 from './TF5.png'
+import TF6 from './TF6.png'
+
 
 import pp from './pp.jpg'
 
 export {
+TF1,
+TF2,
+TF3,
+TF4,
+TF5,
+TF6,  
 r1,
 r2,
 r3,
